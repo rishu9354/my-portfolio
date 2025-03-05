@@ -14,7 +14,7 @@
         </v-col>
         <v-col class="text-center" cols="12" md="6">
           <v-avatar :size="300" class="elevation-12 mx-auto mb-8">
-            <v-img><img src="../assets/hero.jpg" alt="" width="300"></v-img>
+            <v-img><img src="../assets/hero.jpeg" alt="" width="300"></v-img>
           </v-avatar>
         </v-col>
       </v-row>

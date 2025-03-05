@@ -1,7 +1,7 @@
 <template>
     <v-container id="about">
         <!-- about section -->
-        <v-row class="justify-center align-center flex-column-reverse flex-md-row mt-6">
+        <!-- <v-row class="justify-center align-center flex-column-reverse flex-md-row mt-6">
             <v-col cols="12" md="6">
                 <h1 class="text-h3 mb-8 mt-2 text-uppercase text-center">About Us</h1>
                 <v-card-text class="text-h6 text-center"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
@@ -31,8 +31,48 @@
                 <v-card text="Years Experience" title="+1" class="text-center"></v-card>
 
             </v-col>
-            </v-row>
+            </v-row> -->
 
+
+            <v-col cols="12" class="mt-16" id="about">
+          <div>
+            <v-row>
+              <v-col cols="12" sm="6">
+                <div class="egg">
+                  <img src="../assets/hero2.jpeg" alt="" style="max-height:290px; width:345px;  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;">
+                </div>
+              </v-col>
+              <v-col cols="12" sm="6">
+                <h1 class="text-h3 mb-8 mt-2 text-uppercase">About Us</h1>
+                <div style="width: 120px">
+                  <v-slider
+                    v-model="slider2"
+                    color="yellow"
+                    label="track-color"
+                  ></v-slider>
+                </div>
+                <h4 class="mt-n4">I am a Frontend Vue.Js Developer</h4>
+                <h4 class="">And Java Developer</h4>
+                <p class="text-grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur, ullam perspiciatis fugiat temporibus laboriosam
+                  accusamus tempora repellendus sequi sed cum dolorum vero est.
+                  Placeat dicta architecto reiciendis est veniam. Unde.
+                </p>
+                <br />
+                <p class="text-grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur, ullam perspiciatis fugiat temporibus laboriosam
+                  accusamus tempora repellendus sequi sed cum dolorum vero est.
+                  Placeat dicta architecto reiciendis est veniam. Unde.
+                </p>
+                <v-btn tile dark color="yellow" class="mt-4">
+                  Download Resume
+                </v-btn>
+              </v-col>
+            </v-row>
+          </div>
+        </v-col>
             
     </v-container>
 
@@ -103,3 +143,14 @@ export default {
     }
 }
 </script>
+<style>
+  .egg {
+    display: block;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 356px;
+    height: 300px;
+    background-color: #fbdf7e;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+</style>
