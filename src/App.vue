@@ -19,6 +19,7 @@
   <mainPage />
   <servicePage />
   <aboutPage/>
+  <projectPage/>
 
  
 </template>
@@ -27,12 +28,15 @@
 import mainPage from './components/main.vue'
 import servicePage from './components/Service.vue'
 import aboutPage from './components/About.vue'
+import projectPage from './components/Project.vue'
+
 export default {
   name: 'App',
   components: {
     mainPage,
     servicePage,
-    aboutPage
+    aboutPage,
+    projectPage
   }
 }
 </script>

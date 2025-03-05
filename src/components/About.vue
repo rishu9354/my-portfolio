@@ -1,39 +1,6 @@
 <template>
     <v-container id="about">
         <!-- about section -->
-        <!-- <v-row class="justify-center align-center flex-column-reverse flex-md-row mt-6">
-            <v-col cols="12" md="6">
-                <h1 class="text-h3 mb-8 mt-2 text-uppercase text-center">About Us</h1>
-                <v-card-text class="text-h6 text-center"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                    reprehenderit quisquam cupiditate quia dolores suscipit neque perspiciatis iusto iure. Beatae ipsum
-                    fuga eos incidunt magnam vero similique delectus eligendi laudantium commodi, molestias, sapiente
-                    accusantium possimus culpa, dignissimos tenetur ipsam placeat dolorem? Perferendis a temporibus
-                    aliquam iusto exercitationem? Sapiente, beatae vel. </v-card-text>
-
-                   
-            </v-col>
-        </v-row>
-
-        <v-row class="flex-column-reverse flex-md-row justify-center align-center mt-6">
-            <v-col cols="8" md="3">
-                <v-card  text="Happy Client" title="+100" class="text-center">
-                    <v-icon></v-icon>
-                </v-card>
-
-            </v-col>
-
-            <v-col cols="8" md="3">
-                <v-card text="Projects" title="+150" class="text-center"></v-card>
-
-            </v-col>
-
-            <v-col cols="8" md="3">
-                <v-card text="Years Experience" title="+1" class="text-center"></v-card>
-
-            </v-col>
-            </v-row> -->
-
-
             <v-col cols="12" class="mt-16" id="about">
           <div>
             <v-row>
@@ -44,13 +11,13 @@
               </v-col>
               <v-col cols="12" sm="6">
                 <h1 class="text-h3 mb-8 mt-2 text-uppercase">About Us</h1>
-                <div style="width: 120px">
+                <!-- <div style="width: 120px">
                   <v-slider
                     v-model="slider2"
                     color="yellow"
                     label="track-color"
                   ></v-slider>
-                </div>
+                </div> -->
                 <h4 class="mt-n4">I am a Frontend Vue.Js Developer</h4>
                 <h4 class="">And Java Developer</h4>
                 <p class="text-grey">
@@ -66,7 +33,7 @@
                   accusamus tempora repellendus sequi sed cum dolorum vero est.
                   Placeat dicta architecto reiciendis est veniam. Unde.
                 </p>
-                <v-btn tile dark color="yellow" class="mt-4">
+                <v-btn tile dark color="yellow" class="mt-4" href="src/assets/resume.pdf" download="Rishabh_Resume.pdf">
                   Download Resume
                 </v-btn>
               </v-col>
