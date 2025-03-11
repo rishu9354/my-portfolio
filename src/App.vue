@@ -10,8 +10,7 @@
       <v-tab href="#services">Services</v-tab>
       <v-tab href="#about">About Us</v-tab>
       <v-tab>Skills</v-tab>
-      <v-tab>Projects</v-tab>
-      <v-tab>Contact Us</v-tab>
+      <v-tab href="#project">Projects</v-tab>
       <v-tab>Testimonial</v-tab>
     </v-toolbar>
   </div>
@@ -20,7 +19,7 @@
   <servicePage />
   <aboutPage/>
   <projectPage/>
-
+  <!-- <contactPage/> -->
  
 </template>
 
@@ -29,6 +28,7 @@ import mainPage from './components/main.vue'
 import servicePage from './components/Service.vue'
 import aboutPage from './components/About.vue'
 import projectPage from './components/Project.vue'
+// import contactPage from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -37,6 +37,7 @@ export default {
     servicePage,
     aboutPage,
     projectPage
+    // contactPage
   }
 }
 </script>

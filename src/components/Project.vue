@@ -1,8 +1,6 @@
 <template>
-
-
     <v-container fluid>
-        <v-row>
+        <v-row class="mt-6 mb-10">
             <v-col cols="12" class="padd" id="portfolio">
                 <div class="first" id="project">
                     <h1 class="text-h3 mb-8 mt-2 text-uppercase">Projects</h1>
@@ -60,9 +58,11 @@
 
                         </v-col>
                     </v-row>
-                    <v-divider></v-divider>
+                    <!-- <v-divider></v-divider> -->
                 </div>
             </v-col>
+
+            
         </v-row>
     </v-container>
 </template>
