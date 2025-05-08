@@ -1,0 +1,36 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap'); */
+
+.nav-link{
+    @apply font-medium px-3 py-2 hover:border-b-2 hover:border-white hover:text-white transition-all duration-200 ease-out text-2xl border-b-2 border-transparent;
+}
+
+/* home.vue */
+
+@keyframes fade-left {
+    0%{
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-right {
+    0%{
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.animate-fade-left{
+    animation: fade-left 1s ease-in forwards;
+}
+.animate-fade-right{
+    animation: fade-right 1s ease-in forwards;
+}
