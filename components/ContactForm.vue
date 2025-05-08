@@ -36,7 +36,7 @@
                         <button type="submit"
                         class="w-full bg-violet-600 text-white py-2 rounded-lg hover:bg-violet-800 transition duration-300 font-semibold mt-7">
                         <span v-if="isLoading">Loading..</span>
-                        <span v-else>Login</span>
+                        <span v-else>Send</span>
 
                         </button>
                 </form>
