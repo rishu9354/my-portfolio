@@ -18,10 +18,11 @@
                     :autoplay="{delay:4000}" 
                     :pagination="{clickable:true}" 
                     class="mySwiper max-w-3xl mx-auto">
-                    <SwiperSlide v-for="(testimonial, index) in testimonials" :key="index">
+                    <SwiperSlide v-for="(items, index) in testimonials" :key="index">
                         <div class="bg-zinc/80 backdrop-blur-md rounded-tl-xl rounded-br-xl p-8 text-center shadow-xl animate-fade-in-scale">
-                            <p class="text-white text-xl italic mb-4 md:text-xl">"{{ testimonial.feedback }}"</p>
-                            <h3 class="text-white text-2xl font-bold">{{ testimonial.name }}</h3>
+                            <p class="text-white text-xl italic mb-4 md:text-xl">"{{ items.feedback }}"</p>
+                            <h3 class="text-white text-2xl font-bold">{{ items.name }}</h3>
+                            <span class="text-white/80 text-sm italic md:text-lg">{{ items.position }}</span>
                         </div>
                     </SwiperSlide>
                     </Swiper>
@@ -31,24 +32,44 @@
 </template>
 
 <script setup>
+// import { getFirestore,collection,getDocs, doc } from 'firebase/firestore';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from "swiper/modules";
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
-
+// const db = getFirestore();
 const testimonialSection = ref();
 
-const testimonials =[
+const testimonials =ref([
     {
-        name:"Rishabh",
-        feedback:"Nourish & Bloom has transformed my daily skincare routine."
+        name:"Anjali Mehra",
+        position:"Digital Marketer",
+        feedback:"Rishabh is a gem! He built my landing page exactly how I imagined it. Super responsive and professional."
     },
     {
-        name:"Rohan",
-        feedback:"Absolutely love the natural ingredients! My skin feels so refreshed and healthy."
+        name:"Rajat Verma",
+        position:"Startup Founder, EdTech",
+        feedback:"We hired Rishabh for a frontend overhaul. His Vue.js skills are top-notch. Delivered fast and beyond expectations."
     },
     {
         name:"Simran Kuar",
-        feedback:"The fragrance, the feel, everything about it is pure nature in a bottle!"
-    }
-]
+        position:"UI/UX Designer",
+        feedback:"Loved collaborating with Rishabh. He converted my Figma designs to code pixel-perfectly. Highly recommended!"
+    },
+        {
+        name:"Aman Sheikh",
+        position:"Freelance Photographer",
+        feedback:"Rishabh developed my portfolio site beautifully. Clean UI, smooth performance — couldn’t ask for more."
+    },
+        {
+        name:"Karan Bansal",
+        position:"Tech Lead, SaaS Company",
+        feedback:"We trusted Rishabh with a critical feature and he nailed it. Reliable, skilled, and easy to communicate with."
+    },
+]);
+
+// onMounted(async ()=>{
+//     const query = await getDocs(collection(db,"testimonials"));
+//     testimonials.value = query.docs.map(doc=>doc.data());
+// })
+
 </script>
