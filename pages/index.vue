@@ -5,7 +5,10 @@
     <Skills />
     <Banner />
     <Expre />
+    <Project />
+    <Pricing />
     <Feedback />
+    <ContactForm />
 </div>
 </template>
 
