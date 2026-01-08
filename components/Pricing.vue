@@ -37,7 +37,7 @@
                             </li>
                         </ul>
 
-                        <NuxtLink :to="plan.link"
+                        <NuxtLink :to="`/contact?plan=${plan.name.toLowerCase().replace(' ', '-')}`"
                             class="mt-auto block w-full py-4 text-center rounded-full bg-white text-black font-bold hover:bg-violet-600 hover:text-white transition-all duration-500 transform group-hover:scale-[1.02]">
                             Start Project
                         </NuxtLink>
@@ -56,10 +56,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const pricing = [
-    { name: 'Starter Kit', price: '15,000', features: ['Custom UI Design', '5-7 Page Nuxt Site', 'SEO Optimization', 'Responsive'], popular: false, link: '/contact' },
-    { name: 'Professional', price: '40,000', features: ['Full Stack Dev', 'Java Backend', 'Node.js Backend', 'Admin Dashboard'], popular: true, link: '/contact' },
-    { name: 'E-Commerce', price: '60,000 +', features: ['Cart / Order Management', 'Payment Gateway', 'JWT Auth', 'Redis Caching'], popular: false, link: '/contact' },
-    { name: 'Enterprise', price: '80,000 +', features: ['Custom SaaS App', 'Role-Based Access', 'Complex Logic', 'Maintenance'], popular: false, link: '/contact' },
+    { name: 'Starter Kit', price: '15,000', features: ['Custom UI Design', '5-7 Page Nuxt Site', 'SEO Optimization', 'Responsive'], popular: false },
+    { name: 'Professional', price: '40,000', features: ['Full Stack Dev', 'Java Backend', 'Node.js Backend', 'Admin Dashboard'], popular: true},
+    { name: 'E-Commerce', price: '60,000 +', features: ['Cart / Order Management', 'Payment Gateway', 'JWT Auth', 'Redis Caching'], popular: false},
+    { name: 'Enterprise', price: '80,000 +', features: ['Custom SaaS App', 'Role-Based Access', 'Complex Logic', 'Maintenance'], popular: false },
 ];
 const pricingSection = ref(null);
 let ctx;

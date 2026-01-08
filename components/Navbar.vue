@@ -22,9 +22,21 @@
                         <div class="absolute inset-0 bg-violet-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
                     </NuxtLink>
                 </div>
-                <button class="md:hidden z-[110] relative text-white" @click="toggleMenu">
-                    <Icon :icon="isOpen ? 'mdi:close' : 'mdi:menu-variant'" width="32" height="32"/>
-                </button>
+                <button 
+      @click="toggleMenu" 
+      class="relative z-[999]  rounded-md text-violet-600"
+    >
+      <Icon 
+        v-if="isOpen" 
+        icon="mdi:close" 
+        width="32" 
+      />
+      <Icon 
+        v-else 
+        icon="mdi:menu-variant" 
+        width="32" 
+      />
+    </button>
            </div>
   </nav>
 </header>
@@ -78,8 +90,17 @@ let lastScroll = 0;
 let lenis:any;
 
 const toggleMenu = ()=>{
+    // isOpen.value = !isOpen.value;
+    // document.body.style.overflow = isOpen.value ? 'hidden' : '';
+
     isOpen.value = !isOpen.value;
-    document.body.style.overflow = isOpen.value ?'hidden':'';
+    console.log("Menu Status:", isOpen.value); // Debugging ke liye
+    
+    if (isOpen.value) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
 };
 
 //scroll listen

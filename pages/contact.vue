@@ -1,5 +1,5 @@
 <template>
-    <ContactForm />
+    <BookingForm />
 </template>
 
 <script setup>

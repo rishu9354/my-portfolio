@@ -45,6 +45,13 @@
                     </div>
 
                     <div class="relative group">   
+                        <input type="tel" v-model="form.phone" required
+                            class="peer w-full bg-transparent border-b border-zinc-700 py-3 focus:outline-none focus:border-violet-500 transition-colors placeholder-transparent"
+                            placeholder="Phone no.">
+                        <label class="absolute left-0 top-3 text-zinc-500 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-6 peer-focus:text-xs peer-focus:text-violet-500 uppercase tracking-widest font-mono">Phone No.</label>
+                    </div>
+
+                    <div class="relative group">   
                         <textarea v-model="form.message" required rows="3"
                             class="peer w-full bg-transparent border-b border-zinc-700 py-3 focus:outline-none focus:border-violet-500 transition-colors placeholder-transparent resize-none"
                             placeholder="Message"></textarea>
@@ -117,7 +124,7 @@ const initMagneticButton = ()=>{
 onMounted(()=>{
     initMagneticButton(); // call
     // entrance animate
-    const tl = gsap.timeline({defaults:{ease:"power4.out"}});
+    const tl = gsap.timeline({defaults:{ease:"power4.out"}},contactWrapper.value);
     tl.from(".contact-title",{
         y:150,
         duration:1.5,
@@ -131,8 +138,12 @@ onMounted(()=>{
 const onSubmit = async ()=>{
         isLoading.value = true;
         try {
-            const res = await axios.post('http://localhost:4000/api/contact', form.value)
-            alert(res.data.message);
+
+            const res = await $fetch('/api/contact', {
+                method:'POST',
+                body:form.value,
+            })
+            // alert(res.data.message);
              form.value = { name: '', email: '', phone: '', message: '' };
         } catch (error) {
             alert('Something went wrong')

@@ -1,7 +1,7 @@
 <template>
 
     <footer ref="footerScetion"
-        class="footer-reveal relative bg-[#0a0a0a] pt-32 pb-10 px-6 md:px-20 border-t border-zinc-900 overflow-hidden">
+        class="footer-reveal relative bg-[#0a0a0a] pt-32 pb-10 px-6 md:px-20 border-t border-zinc-900 overflow-hidden text-zinc-800">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none opacity-[0.02] select-none"
             ref="footerBg">
             <h2 class="text-[23vw] font-black uppercase tracking-tighter leading-none text-center">code.with.<br><span class="text-[25vw]">rishu</span></h2>
