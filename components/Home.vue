@@ -69,9 +69,9 @@
                 </div>
                 
                 <div ref="cta" class="relative group">
-                    <NuxtLink to="/Contact" class="inline-flex items-center justify-center w-32 h-32 md:w-40 md:h-40 rounded-full border border-zinc-700 text-white hover:bg-violet-600 hover:border-violet-600 transition-all duration-500">
+                    <a href="#connect" class="inline-flex items-center justify-center w-32 h-32 md:w-40 md:h-40 rounded-full border border-zinc-700 text-white hover:bg-violet-600 hover:border-violet-600 transition-all duration-500">
                         <span class="text-sm font-bold uppercase tracking-widest group-hover:scale-110 transition-transform">Hire Me</span>
-                    </NuxtLink>
+                    </a>
                 </div>
             </div>
         </div>

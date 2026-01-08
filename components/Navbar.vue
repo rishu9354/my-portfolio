@@ -14,13 +14,13 @@
                         {{ link.name }}
                     </a>
                     
-                    <NuxtLink to="/contact" class="group relative px-6 py-2 overflow-hidden rounded-full border border-zinc-700 bg-zinc-900 text-white">
+                    <a href="#connect" class="group relative px-6 py-2 overflow-hidden rounded-full border border-zinc-700 bg-zinc-900 text-white">
                         <span class="relative z-10 flex items-center gap-2">
                             Get in touch
                             <Icon icon="mdi:arrow-top-right" width="18" class="group-hover:rotate-45 transition-transform duration-300"/>
                         </span>
                         <div class="absolute inset-0 bg-violet-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-                    </NuxtLink>
+                    </a>
                 </div>
                 <button 
       @click="toggleMenu" 
