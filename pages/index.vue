@@ -13,20 +13,19 @@
 </template>
 
 <script setup lang="ts">
-import Lenis from 'lenis'
+//import Lenis from 'lenis'
 
 
-onMounted(()=>{
-    // smooth scroller using lenis
-    const lenis = new Lenis();
-    function raf(time:number){
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+//onMounted(()=>{
+    // smooth scroller using lenisconst lenis = new Lenis();
+   // function raf(time:number){
+      //  lenis.raf(time);
+    //  requestAnimationFrame(raf);
+ //   }
+  //  requestAnimationFrame(raf);
 
 
   
-})
+//})
 
 </script>
